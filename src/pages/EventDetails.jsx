@@ -10,7 +10,7 @@ const EventDetails = () => {
   const [searchVisible, setSearchVisible] = useState(true);
   const eventId = useParams();
 
-  const API_URL = import.meta.env.VIRE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
   const { data, loading, error } = useFetch(
     `${API_URL}/events/${eventId.eventId}`
   );

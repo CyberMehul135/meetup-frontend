@@ -11,7 +11,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchVisible, setSearchVisible] = useState(true);
 
-  const API_URL = import.meta.env.VIRE_API_URL;
+  const API_URL = import.meta.env.VITE_API_URL;
   const { data, loading, error } = useFetch(`${API_URL}/events`);
 
   useEffect(() => {
